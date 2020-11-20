@@ -1,7 +1,8 @@
+
 <?php
 /*
   ./app/modeles/postsModele.php
- */
+
   namespace App\Modeles\PostsModele;
 
   function findAll(\PDO $connexion){
@@ -22,3 +23,5 @@
     $rs->execute();
     return $rs->fetch(\PDO::FETCH_ASSOC);
   }
+
+*/

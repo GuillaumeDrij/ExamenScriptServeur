@@ -9,6 +9,6 @@
 
   // 2. Définir les paramètres de connexion à lma db
   define('HOSTNAME', 'localhost:3306');
-  define('DBNAME',   '');
+  define('DBNAME',   'creatifs');
   define('USERNAME', 'root');
   define('USERPWD' , '');

@@ -1,7 +1,7 @@
 <?php
 /*
   ./app/modeles/usersModele.php
- */
+
   namespace App\Modeles\UsersModele;
 
     function findOneByLoginPassword(\PDO $connexion, string $login, string $password) {
@@ -15,3 +15,4 @@
       $rs->execute();
       return $rs->fetch(\PDO::FETCH_ASSOC);
     }
+*/

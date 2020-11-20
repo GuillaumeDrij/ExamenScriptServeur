@@ -2,7 +2,7 @@
 /*
   ./noyau/init.php
  */
-session_start();
+
 
   require_once '../noyau/constantes.php';
   require_once '../app/config/params.php';

@@ -1,7 +1,7 @@
 <?php
 /*
   ./app/controleurs/usersControleur.php
- */
+
   namespace App\Controleurs\UsersControleur;
   use \App\Modeles\UsersModele;
 
@@ -9,7 +9,7 @@
     if (isset($_SESSION['user'])):
       header('location: ' . BASE_URL_ADMIN);
     endif;
-    
+
     GLOBAL $content;
     ob_start();
       include '../app/vues/users/loginForm.php';
@@ -29,3 +29,5 @@
       header('location: ' . BASE_URL_PUBLIC .'users/login');
     }
   }
+
+*/

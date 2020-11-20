@@ -1,3 +1,19 @@
+<?php
+ /*
+    ../app/vues/template/partials/_head.php
+ */
+?>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>CREA'TIFs - <?php echo $title; ?></title>
+
+<!-- Bootstrap core CSS -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-<!-- CSS here -->
+
+<!-- Custom styles for this template -->
+<link href="assets/css/blog-post.css" rel="stylesheet">

@@ -1,7 +1,7 @@
 <?php
 /*
   ./app/routeur.php
- */
+
 
 // ROUTES DE POSTS
   // DETAILS D'UN POST
@@ -25,3 +25,4 @@
         include_once '../app/controleurs/postsControleur.php';
         \App\Controleurs\PostsControleur\indexAction($connexion);
     endif;
+*/
