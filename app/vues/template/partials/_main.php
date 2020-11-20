@@ -12,9 +12,10 @@
         <?php echo $content; ?>
       </div>
 
-      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
         <?php include '../app/vues/template/partials/_aside.php'?>
-    </div>
-    <!-- /.row -->
+      </div>
+      
 
   </div>
+ </div>
