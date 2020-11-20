@@ -1,0 +1,45 @@
+CONSIGNES EXAMEN SCRIPTS SERVEURS - SESSION 2 -  2020
+
+1. LES ROUTES:
+  Accueil :
+  PATTERN / ou /projets
+  > Liste des projets liste des projets (en afficher uniquement 10)
+  > Le texte doit être tronqué à 100 caractères
+  > N'OUBLIEZ PAS LES TAGS !!!
+
+  Détails d'un projet
+  PATTERN: /projets/id/slug.html
+
+  Suppression d'un projet
+  PATTERN: /projets/delete/id/slug.html
+
+  Modification d'un tag
+  PATTERN: /tags/id/slug/edit/form.html
+  > Formulaire de Modification
+
+  PATTERN: /tags/id/slug/edit/update.html
+  > Modification .. redirection vers la page d'accueil
+
+  Newsletter:
+  PATTERN: newsletter
+  > INSERT dans la db
+  > Vue : Merci, votre mail a bien été ajouté à notre base de données.
+
+
+2. LA FONCTION:
+ATTENTION: il n'y a pas de slugs dans les tables !
+> Créez une fonction slugify() qui transforme une chaîne de caractères en slug
+  En mettant tout en minuscules,
+  En remplaçant les ' ', '.', '!', '?', ''' et les ';' en '-',
+  En remplaçant les 'é', 'è', 'ê', 'à', 'ç', 'â' en caractère non accentué
+
+  > Créez une fonction truncate(x) qui coupe une chaîne de caractère 
+    à l'espace juste avant le xème catactère...
+
+3. NE PAS OUBLIER
+Pensez à
+  - découper le template en partials
+  - découper les routeurs
+  - Mettre des commentaires dans les Ctrl et les modèles
+  - Mettre des commentaires dans les vues
+
