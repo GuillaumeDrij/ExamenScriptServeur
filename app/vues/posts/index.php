@@ -8,11 +8,11 @@
 
 ?>
 <!-- Title -->
-<h1 class="mt-4">Les projets <small>Design capill'Hair</small></h1>
+  <h1 class="mt-4">Les projets <small>Design capill'Hair</small></h1>
 
 <hr>
 
-<!-- LISTE DES POSTS -->
+  <!-- LISTE DES POSTS -->
 <?php foreach ($posts as $post): ?>
 <div class="row">
   <div class="col-md-4">
@@ -28,7 +28,7 @@
 
     </p>
     <p><?php echo substr($post['texte'], 0, 100); ?></p>
-    <a class="btn btn-primary" href="?postID=<?php echo $post['id']; ?>">View Project</a>
+    <a class="btn btn-primary" href="projets/<?php echo $post['id']; ?>/<?php echo \Noyau\Fonctions\slugify ($post['titre']); ?>">View Project</a>
     <hr/>
     <ul class="list-inline tags">
 
