@@ -18,14 +18,21 @@
     $rs = $connexion->query($sql);
     return $rs->fetchAll(\PDO::FETCH_ASSOC);
   }
-/*
+
+/**
+ * [findOneById description]
+ * @param  PDO    $connexion [description]
+ * @param  int    $id        [description]
+ * @return [type]            [description]
+ */
+
+
   function findOneById(\PDO $connexion, int $id) {
     $sql = "SELECT *
-            FROM posts
+            FROM projets
             WHERE id = :id;";
     $rs = $connexion->prepare($sql);
     $rs->bindValue(':id', $id, \PDO::PARAM_INT);
     $rs->execute();
     return $rs->fetch(\PDO::FETCH_ASSOC);
   }
-*/

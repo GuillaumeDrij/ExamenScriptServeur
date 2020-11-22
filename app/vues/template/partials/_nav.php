@@ -1,6 +1,6 @@
 <?php
  /*
-    ../app/vues/template/partials/_nav.php  
+    ../app/vues/template/partials/_nav.php
  */
 ?>
 

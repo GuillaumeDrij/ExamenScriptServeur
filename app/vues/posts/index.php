@@ -3,7 +3,7 @@
   ./app/vues/posts/index.php
 
     Variables disponibles
-    $posts= ARRAY(ARRAY(id, title, texte, dateCreation, image, creatif))
+    $posts= ARRAY(ARRAY(id, titre, texte, dateCreation, image, creatif))
  */
 
 ?>
@@ -28,11 +28,19 @@
 
     </p>
     <p><?php echo substr($post['texte'], 0, 100); ?></p>
-    <a class="btn btn-primary" href="projet_details.html">View Project</a>
+    <a class="btn btn-primary" href="?postID=<?php echo $post['id']; ?>">View Project</a>
     <hr/>
     <ul class="list-inline tags">
-      <li><a href="#" class="btn btn-default btn-xs">Vintage</a></li>
-      <li><a href="#" class="btn btn-default btn-xs">Football</a></li>
+
+  <!-- Tags des projets à partir de l'index -->
+
+
+      <?php
+      include_once '../app/controleurs/tagsControleur.php';
+      \App\Controleurs\TagsControleur\indexByPostIdAction($connexion, $post['id']);
+       ?>
+
+
     </ul>
   </div>
 </div>
