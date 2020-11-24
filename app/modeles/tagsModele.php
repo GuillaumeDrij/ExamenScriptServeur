@@ -17,3 +17,16 @@
     $rs->execute();
     return $rs->fetchAll(\PDO::FETCH_ASSOC);
   }
+
+
+// Liste des tags dans l'index, à droite non lié à un projet
+/*
+  function findAll(\PDO $connexion) :array{
+    $sql = "SELECT *
+            FROM tags
+            ORDER BY dateCreation DESC;";
+
+    $rs = $connexion->query($sql);
+    return $rs->fetchAll(\PDO::FETCH_ASSOC);
+  }
+*/

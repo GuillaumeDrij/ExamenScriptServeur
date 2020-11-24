@@ -24,6 +24,14 @@ function indexAction(\PDO $connexion){
   $content = ob_get_clean();
 }
 
+
+/**
+ * [showAction description]
+ * @param  PDO    $connexion [description]
+ * @param  int    $id        [description]
+ * @return [type]            [description]
+ */
+
 function showAction(\PDO $connexion, int $id) {
     // Je demande les infos du post au modèle et je les mets dans $post
       include_once '../app/modeles/postsModele.php';
@@ -36,3 +44,18 @@ function showAction(\PDO $connexion, int $id) {
         include '../app/vues/posts/show.php';
       $content = ob_get_clean();
   }
+
+/**
+ * [deleteAction description]
+ * @param  PDO    $connexion [description]
+ * @param  int    $id        [description]
+ * @return [type]            [description]
+ */
+
+function deleteAction(\PDO $connexion, int $id) {
+  // Je demande au modèle de supprimer un post
+     include_once '../app/modeles/postsModele.php';
+     $return = Post\deleteByPostId($connexion, $id);
+  // Et ensuite je redirige vers la liste des posts
+
+}

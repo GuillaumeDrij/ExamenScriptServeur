@@ -36,3 +36,21 @@
     $rs->execute();
     return $rs->fetch(\PDO::FETCH_ASSOC);
   }
+
+
+/**
+ * [deleteAction description]
+ * @param  PDO    $connexion [description]
+ * @param  int    $id        [description]
+ * @return [type]            [description]
+ */
+
+  function deleteByPostId(\PDO $connexion, int $id) {
+    $sql = "DELETE FROM projets
+            WHERE id = :id;";
+    $rs = $connexion->prepare($sql);
+    $rs->bindValue(':id', $id, \PDO::PARAM_INT);
+    $rs->execute();
+
+
+  }

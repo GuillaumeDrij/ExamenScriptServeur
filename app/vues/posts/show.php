@@ -8,7 +8,8 @@
 
 ?>
 <!-- Title -->
-<h1 class="mt-4"><?php echo $post['titre']; ?> | <a href="#">Supprimer le projet</a></h1>
+<h1 class="mt-4"><?php echo $post['titre']; ?> | <a href="projets/delete/<?php echo $post['id']; ?>/<?php echo \Noyau\Fonctions\slugify ($post['titre']); ?>">Supprimer le projet</a></h1>
+
 <p class="lead">
   par
   <a href="artiste_details.html"><?php echo $post['creatif']; ?></a> le 01-01-2017
@@ -37,5 +38,6 @@
      ?>
 
   </div>
+
 </div>
 <hr>

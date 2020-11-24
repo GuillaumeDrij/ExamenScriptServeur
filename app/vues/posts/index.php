@@ -30,19 +30,20 @@
     <p><?php echo substr($post['texte'], 0, 100); ?></p>
     <a class="btn btn-primary" href="projets/<?php echo $post['id']; ?>/<?php echo \Noyau\Fonctions\slugify ($post['titre']); ?>">View Project</a>
     <hr/>
+
+  <!-- Tags des projets -->
+
     <ul class="list-inline tags">
-
-  <!-- Tags des projets à partir de l'index -->
-
 
       <?php
       include_once '../app/controleurs/tagsControleur.php';
       \App\Controleurs\TagsControleur\indexByPostIdAction($connexion, $post['id']);
        ?>
 
-
     </ul>
   </div>
+
+
 </div>
 <hr>
 <?php endforeach; ?>
